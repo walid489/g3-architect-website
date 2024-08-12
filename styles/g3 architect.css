@@ -1,8 +1,118 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-.work-sans-front {
+.work-sans-font {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand {
+  font-weight: 700;
+  font-size: 3rem;
+}
+.text-gray {
+  color: #424242;
+}
+
+.c {
+  color: #727272;
+}
+.bg-light {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+.btn-primary {
+  background-color: #ff900e;
+  color: #ffffff;
+  padding: 20px 25px;
+  font-size: 1.25rem;
+  border-radius: 8px;
+  border: none;
+}
+
+.nav-links {
+  display: flex;
+}
+.nav-item {
+  list-style: none;
+  margin-right: 30px;
+}
+.nav-link {
+  text-decoration: none;
+  font-weight: 500;
+}
+.navbar,
+.bannar {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.banner-content {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.banner-title {
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.banner-image {
+  width: 100%;
+}
+
+.teams {
+  display: flex;
+  align-items: center;
+}
+
+.team-image-container {
+  display: grid;
+  margin-left: 300px;
+
+  padding: 80px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.our-features {
+  margin-left: 130px;
+  max-width: 530px;
+}
+
+.section-title {
+  font-size: 2.8rem;
+}
+
+.of-our {
+  font-weight: 700;
+}
+
+.fters {
+  color: #ff900e;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar,
+  .nav-links,
+  .teams {
+    flex-direction: column;
+  }
+}
+
+/* medium size devices */
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .teams {
+    flex-direction: column;
+  }
+  .our-features {
+    margin-left: 50px;
+  }
 }
